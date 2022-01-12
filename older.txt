@@ -1,0 +1,9 @@
+import youtube_dl
+import time
+import os 
+
+format = 22
+vid_url = str(input('what is the video url? '))
+
+os.system('pip install youtube-dl')
+os.system(f'youtube-dl {vid_url} -k {format}')
